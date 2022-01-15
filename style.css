@@ -767,6 +767,11 @@ h3 {
     }
 
     /* navbar */
+    nav {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
     .logo {
         font-size: 2.5rem;
         padding-left: 2rem;
