@@ -722,7 +722,7 @@ h3 {
 
 /* --------------- PC-------------- */
 
-@media screen and (min-width:1312px) and (max-width:1600px) {
+@media screen and (min-width:1312px) and (max-width:1800px) {
 
     /* navbar */
     .logo {
@@ -744,6 +744,10 @@ h3 {
 @media screen and (min-width:1800px) {
 
     /* global */
+    h3 {
+        font-size: 3rem;
+    }
+
     h1 {
         font-size: 4rem;
     }
