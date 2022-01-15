@@ -4,7 +4,7 @@
 :root {
     --primary-color-1: #010f11;
     --primary-color-2: #072b2e;
-    --primary-color-3: #4FBDBA;
+    --primary-color-3: #b9e9e7;
     --primary-color-4: #e2f8f8;
     --primary-color-5: #efffff;
     --font-family: 'Poppins',
@@ -58,16 +58,17 @@ small {
 
 button {
     border: none;
-    padding: .75rem 1.75rem;
+    padding: .75rem 1.95rem;
     background-color: var(--primary-color-1);
     color: var(--primary-color-4);
     font-family: var(--font-family);
     letter-spacing: .1rem;
-    font-size: 1.15rem;
+    font-size: 1rem;
     border-radius: 3rem;
-    transition: 1.15s ease;
+    transition: .65s ease;
     margin-top: 2.5rem;
     cursor: pointer;
+    font-weight: bolder;
 }
 
 p {
@@ -85,7 +86,8 @@ p {
 }
 
 button:hover {
-    color: var(--primary-color-3);
+    color: var(--primary-color-4);
+    background-color: var(--primary-color-2);
 }
 
 button:hover .btn-icon {
@@ -93,7 +95,7 @@ button:hover .btn-icon {
 }
 
 footer {
-    background-color: var(--primary-color-1);
+    background-color: var(--primary-color-1)
 }
 
 .fab {
@@ -104,18 +106,6 @@ footer {
 a:hover .fab {
     transform: scale(1.05);
     color: var(--primary-color-3);
-}
-
-input,
-textarea {
-    display: block;
-    padding: .7rem 1rem;
-    width: 60vw;
-    border-radius: .25rem;
-    border: 1px solid var(--primary-color-2);
-    margin-bottom: .5rem;
-    font-family: var(--font-family);
-    font-size: 1rem;
 }
 
 section {
@@ -269,9 +259,6 @@ header {
     align-items: center;
 }
 
-.section-heading {
-    margin-bottom: 3rem;
-}
 
 .collection-items {
     display: grid;
@@ -280,11 +267,11 @@ header {
     gap: 1rem 4rem;
 }
 
-.collection-heading {
+.section-heading {
     width: 40vw;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     text-align: center;
     font-size: 3.75rem;
 }
@@ -337,7 +324,78 @@ header {
 }
 
 
-
-
-
 /* --------------- End of Collection -------------- */
+
+/* --------------- Contact -------------- */
+
+.contact {
+    padding-bottom: 2rem;
+    margin: 2rem auto 4rem auto;
+
+}
+
+.form {
+    width: 100%;
+}
+
+.contact-img {
+    width: 60%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-image {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -1rem;
+}
+
+input,
+textarea {
+    border-radius: .7rem;
+    border: none;
+    border-bottom: 2px solid var(--primary-color-2);
+    border-left: .5px solid var(--primary-color-2);
+    border-right: .5px solid var(--primary-color-2);
+    font-family: var(--font-family);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    padding: .9rem 1rem;
+    min-width: 40vw;
+    display: block;
+    background-color: var(--primary-color-5);
+}
+
+.form-container {
+    padding: 2.5rem 2rem 2rem 2rem;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color-1);
+    border-radius: 1.5rem;
+    flex-basis: 45%;
+}
+
+.contact-btn {
+    width: 30vw;
+    margin-top: 1rem;
+    background-color: var(--primary-color-5);
+    color: var(--primary-color-1);
+}
+
+.contact-btn:hover {
+    background-color: #c8e9e8;
+    color: var(--primary-color-1);
+}
+
+/* --------------- End of Contact -------------- */
