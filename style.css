@@ -25,32 +25,26 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-transform: capitalize;
     padding-bottom: 2.25rem;
 }
 
-span {
-    display: inline-block;
-    padding-left: .25rem;
-    padding-right: .25rem;
-}
-
 h4 {
-    font-size: 1rem;
+    font-size: 1.75rem;
     text-transform: capitalize;
     padding-bottom: .35rem;
 }
 
 h6 {
-    font-size: .85rem;
+    font-size: 1.35rem;
     padding-bottom: .35rem;
 }
 
 small {
     display: block;
     text-transform: capitalize;
-    font-size: 1rem;
+    font-size: 1.25rem;
     padding-bottom: .2rem;
 }
 
@@ -72,7 +66,7 @@ button {
 
 p {
     font-size: 1.2rem;
-    line-height: 1.7rem;
+    line-height: 2rem;
     width: 45vw;
     text-align: justify;
 }
@@ -162,7 +156,8 @@ nav {
 }
 
 .nav-items ul li:hover {
-    transform: scale(1.15);
+    transform: scale(1.04);
+    color: var(--primary-color-3);
 }
 
 
@@ -192,6 +187,12 @@ header {
 .header-image {
     position: relative;
     top: -1rem;
+}
+
+.header-info h1 span {
+    display: inline-block;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .header-img {
@@ -228,12 +229,12 @@ header {
 .client-logo {
     padding: 1rem;
     width: 10rem;
-    transition: .3s ease-in-out;
+    transition: .3s ease;
 }
 
 .amazon {
     position: relative;
-    top: .7rem;
+    top: .8rem;
 }
 
 .rakuten {
@@ -242,11 +243,11 @@ header {
 }
 
 .target {
-    width: 12rem;
+    width: 13rem;
 }
 
 .client-logo:hover {
-    transform: scale(1.1);
+    transform: scale(1.06);
 }
 
 /* --------------- End of Client -------------- */
@@ -275,12 +276,9 @@ header {
 }
 
 .section-heading {
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1.5rem;
+    width: 100%;
+    font-size: 5rem;
     text-align: center;
-    font-size: 3.75rem;
 }
 
 .single-item {
@@ -339,6 +337,12 @@ header {
 .contact {
     padding-bottom: 2rem;
     margin: 2rem auto 4rem auto;
+}
+
+.contact-header {
+    width: 100%;
+    margin: 0 auto auto;
+    text-align: center;
 }
 
 .contact-container {
@@ -456,6 +460,19 @@ h3 {
         font-size: 1rem;
     }
 
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    h6 {
+        font-size: 1.15rem;
+    }
+
+    small {
+        font-size: 1rem;
+    }
+
+
     /* NAVBAR */
     nav {
         display: flex;
@@ -512,10 +529,22 @@ h3 {
         padding: 0.7rem;
     }
 
+    .amazon {
+        position: relative;
+        top: .5rem;
+    }
+
+    .target {
+        width: 7.3rem;
+        position: relative;
+        top: .12rem;
+    }
+
     /* collection */
+
     .section-heading {
         font-size: 2rem;
-        width: 60vw;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -535,7 +564,6 @@ h3 {
     }
 
     /* contact */
-
     .contact-container {
         flex-direction: column;
         justify-content: center;
@@ -620,6 +648,10 @@ h3 {
         text-align: center;
     }
 
+    .header-info h1 {
+        width: 85vw;
+    }
+
     .header-info p {
         width: 85vw;
         margin: 0 auto;
@@ -645,8 +677,15 @@ h3 {
         padding-right: 2rem;
     }
 
+    .amazon {
+        position: relative;
+        top: .5rem;
+    }
+
     .target {
-        width: 9rem;
+        width: 9.1rem;
+        position: relative;
+        top: .12rem;
     }
 
     /* collection */
@@ -673,7 +712,7 @@ h3 {
 
     /* contact */
     .contact-img {
-        width: 80%;
+        width: 95%;
     }
 }
 
@@ -683,7 +722,7 @@ h3 {
 
 /* --------------- PC-------------- */
 
-@media screen and (min-width:1312px) {
+@media screen and (min-width:1312px) and (max-width:1600px) {
 
     /* navbar */
     .logo {
@@ -697,5 +736,98 @@ h3 {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+    }
+}
+
+/* ---------------Bigger PC-------------- */
+
+@media screen and (min-width:1600px) {
+
+    /* global */
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 1.75rem;
+    }
+
+    /* navbar */
+    .logo {
+        font-size: 2.5rem;
+        padding-left: 2rem;
+    }
+
+    .nav-items ul li {
+        font-size: 1.5rem;
+        padding: .4rem .2rem;
+    }
+
+    button {
+        border: none;
+        padding: .85rem 2rem;
+        background-color: var(--primary-color-1);
+        color: var(--primary-color-4);
+        font-family: var(--font-family);
+        letter-spacing: .1rem;
+        font-size: 1.25rem;
+        margin-top: 3rem;
+
+    }
+
+    /* client */
+    .client-logo-container {
+        justify-content: center;
+    }
+
+    .client-section {
+        width: 90vw;
+    }
+
+    .client-logo {
+        width: 11rem;
+        padding-right: 2rem;
+    }
+
+    .amazon {
+        position: relative;
+        top: .7rem;
+    }
+
+    .target {
+        width: 12.5rem;
+        position: relative;
+        top: .14rem;
+    }
+
+    /* collection */
+    .section-heading {
+        font-size: 4.5rem;
+        width: 60vw;
+        margin: 0 auto;
+    }
+
+    .single-item {
+        min-width: 20vw;
+        margin-bottom: .5rem;
+        padding: .5rem;
+    }
+
+
+    .item-image {
+        width: 90%;
+    }
+
+    /* contact */
+    .contact {
+        max-width: 75vw;
+    }
+
+    .contact-header {
+        margin-bottom: 2rem;
+    }
+
+    .contact-container {
+        margin-bottom: 1rem;
     }
 }
