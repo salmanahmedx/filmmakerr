@@ -183,3 +183,54 @@ header {
 }
 
 /* --------------- End of Header -------------- */
+
+/* --------------- Client -------------- */
+
+.client-section {
+    width: 80vw;
+    margin: .5rem auto;
+    border-top: 2px solid var(--primary-color-2);
+    border-bottom: 2px solid var(--primary-color-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.client-logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.client-logo {
+    padding: 1rem;
+    width: 10rem;
+    transition: .3s ease-in-out;
+}
+
+.amazon {
+    position: relative;
+    top: .7rem;
+}
+
+.rakuten {
+    position: relative;
+    top: .3rem;
+}
+
+.walmart {
+    width: 12rem;
+}
+
+.client-logo:hover {
+    transform: scale(1.1);
+}
+
+/* --------------- End of Client -------------- */
+
+/* --------------- Collection -------------- */
+
+
+
+/* --------------- End of Collection -------------- */
