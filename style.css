@@ -339,17 +339,6 @@ header {
 .contact {
     padding-bottom: 2rem;
     margin: 2rem auto 4rem auto;
-
-}
-
-.form {
-    width: 100%;
-}
-
-.contact-img {
-    width: 60%;
-    height: 50%;
-    object-fit: cover;
 }
 
 .contact-container {
@@ -366,6 +355,12 @@ header {
     top: -1rem;
 }
 
+.contact-img {
+    width: 60%;
+    height: 50%;
+    object-fit: cover;
+}
+
 input,
 textarea {
     border-radius: .7rem;
@@ -377,7 +372,9 @@ textarea {
     margin-bottom: 1rem;
     font-size: 1rem;
     padding: .9rem 1rem;
-    min-width: 40vw;
+    min-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
     background-color: var(--primary-color-5);
 }
@@ -392,6 +389,10 @@ textarea {
     background-color: var(--primary-color-1);
     border-radius: 1.5rem;
     flex-basis: 45%;
+}
+
+form {
+    width: 100%;
 }
 
 .contact-btn {
@@ -524,6 +525,42 @@ h3 {
 
     .item-image {
         width: 100%;
+    }
+
+    /* contact */
+
+    .contact-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-container {
+        width: 95vw;
+        padding: 2rem 0.5rem;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input,
+    textarea {
+        border-radius: .7rem;
+        margin-bottom: 1rem;
+        font-size: .85rem;
+        padding: .6rem .8rem;
+        min-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-image {
+        margin: 2rem auto;
+    }
+
+    .contact-img {
+        width: 60%;
     }
 }
 
