@@ -247,7 +247,7 @@ header {
 }
 
 .client-logo:hover {
-    transform: scale(1.06);
+    transform: scale(1.03);
 }
 
 /* --------------- End of Client -------------- */
@@ -298,7 +298,7 @@ header {
 }
 
 .single-item:hover {
-    transform: scale(1.007);
+    transform: scale(1.005);
     box-shadow: 0px 1.8px 10px -10px black;
 }
 
@@ -572,7 +572,7 @@ h3 {
 
     .form-container {
         width: 95vw;
-        padding: 0.75rem;
+        padding: 1rem;
     }
 
     form {
@@ -741,7 +741,7 @@ h3 {
 
 /* ---------------Bigger PC-------------- */
 
-@media screen and (min-width:1600px) {
+@media screen and (min-width:1800px) {
 
     /* global */
     h1 {
