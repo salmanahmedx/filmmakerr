@@ -454,6 +454,7 @@ h3 {
     /* global */
     h1 {
         font-size: 2.5rem;
+        margin-top: -1.5rem;
     }
 
     p {
@@ -472,9 +473,13 @@ h3 {
         font-size: 1rem;
     }
 
+    button {
+        margin: 1rem;
+    }
 
     /* NAVBAR */
     nav {
+        min-height: 15vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -496,7 +501,7 @@ h3 {
     header {
         padding: 1.25rem;
         flex-direction: column;
-        min-height: 100vh;
+        min-height: 150vh;
         flex-direction: column;
         text-align: center;
     }
