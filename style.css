@@ -777,7 +777,7 @@ h3 {
 
     /* client */
     .client-logo-container {
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .client-section {
@@ -786,7 +786,6 @@ h3 {
 
     .client-logo {
         width: 11rem;
-        padding-right: 2rem;
     }
 
     .amazon {
