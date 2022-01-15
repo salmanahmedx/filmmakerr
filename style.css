@@ -27,18 +27,13 @@ body {
 h1 {
     font-size: 3rem;
     text-transform: capitalize;
+    padding-bottom: 2.25rem;
 }
 
 span {
     display: inline-block;
     padding-left: .25rem;
     padding-right: .25rem;
-    transition: .3s ease;
-}
-
-span:hover {
-    background-color: var(--primary-color-1);
-    color: var(--primary-color-5);
 }
 
 button {
@@ -51,6 +46,15 @@ button {
     font-size: 1rem;
     border-radius: 3rem;
     transition: 1.15s ease;
+    margin-top: 2.5rem;
+    cursor: pointer;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    width: 45vw;
+    text-align: justify;
 }
 
 .btn-icon {
@@ -91,6 +95,10 @@ textarea {
     margin-bottom: .5rem;
     font-family: var(--font-family);
     font-size: 1rem;
+}
+
+section {
+    padding: 2rem 2rem;
 }
 
 /* --------------- End of Global Styles -------------- */
@@ -149,6 +157,29 @@ nav {
 
 /* --------------- Header -------------- */
 
+header {
+    height: 80vh;
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
+.header-span {
+    transition: 0.5s ease-in-out;
+}
+
+.header-heading:hover .header-span {
+    background-color: var(--primary-color-1);
+    color: var(--primary-color-5);
+}
+
+.header-img {
+    transition: .3s ease-in-out;
+}
+
+.header-image:hover .header-img {
+    transform: scale(1.01);
+}
 
 /* --------------- End of Header -------------- */
