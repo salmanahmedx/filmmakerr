@@ -222,6 +222,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .client-logo {
@@ -240,7 +241,7 @@ header {
     top: .3rem;
 }
 
-.walmart {
+.target {
     width: 12rem;
 }
 
@@ -487,6 +488,19 @@ h3 {
         max-width: 100%;
     }
 
+    /* client */
+    .client-section {
+        width: 90vw;
+    }
+
+    .client-logo {
+        width: 7rem;
+        padding: 0.75rem;
+    }
+
+    .target {
+        width: 9rem;
+    }
 }
 
 /* --------------- End of MOBILE DEVICE -------------- */
@@ -534,6 +548,24 @@ h3 {
         max-width: 60%;
     }
 
+    /* client */
+    .client-logo-container {
+        justify-content: center;
+    }
+
+    .client-section {
+        width: 90vw;
+    }
+
+    .client-logo {
+        width: 7rem;
+        padding: 0.5rem;
+        padding-right: 2rem;
+    }
+
+    .target {
+        width: 9rem;
+    }
 }
 
 
