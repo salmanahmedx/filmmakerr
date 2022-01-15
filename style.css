@@ -195,6 +195,7 @@ header {
 }
 
 .header-img {
+    width: 100%;
     transition: .3s ease-in-out;
 }
 
@@ -435,6 +436,15 @@ h3 {
 
 @media screen and (max-width:688px) {
 
+    /* global */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
     /* NAVBAR */
     nav {
         display: flex;
@@ -456,10 +466,26 @@ h3 {
 
     /* HEADER */
     header {
-        padding: 1rem;
+        padding: 1.25rem;
         flex-direction: column;
+        min-height: 100vh;
+        flex-direction: column;
+        text-align: center;
     }
 
+    .header-info p {
+        width: 85vw;
+        margin: 0 auto;
+    }
+
+    .header-image {
+        margin: 4rem auto 4rem auto;
+        max-width: 90%;
+    }
+
+    .header-img {
+        max-width: 100%;
+    }
 
 }
 
@@ -468,6 +494,17 @@ h3 {
 /* --------------- Tablet DEVICE-------------- */
 
 @media screen and (min-width:688px) and (max-width:1312px) {
+
+    /* global */
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+
+    /* navbar */
     .logo {
         font-size: 1.45rem;
         flex-basis: 30%;
@@ -477,16 +514,48 @@ h3 {
         font-size: 1rem;
         padding: .4rem .2rem;
     }
+
+    /* header */
+    header {
+        padding: 1.25rem;
+        flex-direction: column;
+        min-height: 100vh;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-info p {
+        width: 85vw;
+        margin: 0 auto;
+    }
+
+    .header-image {
+        margin: 6rem auto 2rem auto;
+        max-width: 60%;
+    }
+
 }
+
+
 
 /* --------------- End of Tablet DEVICE -------------- */
 
 /* --------------- PC-------------- */
 
 @media screen and (min-width:1312px) {
+
+    /* navbar */
     .logo {
         padding-left: 2rem;
     }
-}
 
-/* --------------- End of PC -------------- */
+    /* header */
+    header {
+        height: 88vh;
+        padding: 2rem 2rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    /* --------------- End of PC -------------- */
