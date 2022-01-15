@@ -729,6 +729,10 @@ h3 {
         padding-left: 2rem;
     }
 
+    .header-info h1 span {
+        padding: 0;
+    }
+
     /* header */
     header {
         height: 88vh;
@@ -749,11 +753,12 @@ h3 {
     }
 
     h1 {
-        font-size: 4rem;
+        font-size: 3.75rem;
     }
 
     p {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
+        width: 55vw;
     }
 
     /* navbar */
@@ -778,6 +783,9 @@ h3 {
         margin-top: 3rem;
 
     }
+
+    /* header */
+
 
     /* client */
     .client-logo-container {
@@ -811,7 +819,7 @@ h3 {
     }
 
     .single-item {
-        min-width: 20vw;
+        min-width: 21.5vw;
         margin-bottom: .5rem;
         padding: .5rem;
     }
